@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <center>
+    <form action="./welcome.html" method="get">
+      <img src="./tsrtc-logo.webp" alt="" width="60">
+      <h2>TELANGANA STATE ROAD TRANSPORTATION CORPORATION</h2>
+      <h2>GENERAL BUS PASS APPLICATION</h2>
+      <fieldset style="inline-size: 50%;">
+        <legend>Applicant Details</legend>
+        <label for="name">Name <span style="color: red;">*</span></label>
+        <input type="text" id="name" name="name" required>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <label for="fathername">Father's/Gauradian Name <span style="color: red;">*</span></label>
+        <input type="text" name="fathername" id="fathername" required><br><br>
+        <label for="dob">Date of Birth <span style="color: red;">*</span></label>
+        <input type="date" name="dob" id="dob" required>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        <label for="gender">Gender <span style="color: red;">*</span></label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label><br><br>
+        <label for="age">Age <span style="color: red;">*</span> &nbsp; </label>
+        <input type="number" name="age" id="age" placeholder="Age" required>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <label for="aadhar">Aadhar Number <span style="color: red;">*</span></label>
+        <input type="tel" name="aadhar" id="aadhar" required><br><br>
+        <label for="whatsapp">WhatsApp Number <span style="color: red;">*</span></label>
+        <input type="tel" name="whatsapp" id="whatsapp">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <label for="email">Email ID <span style="color: red;">*</span></label>
+        <input type="email" name="email" id="email"><br><br>
+        <label for="photo">Photo <span style="color: red;">*</span></label>
+        <input type="file" name="photo" id="photo" accept="image/*">      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+<br><br>
+    </fieldset> <br>
+    <fieldset style="inline-size: 50%;">
+      <legend>Residential Address Details</legend>
+      <label for="address">Applicant's Address <span style="color: red;">*</span></label>
+      <textarea name="address" id="address"></textarea>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <label for="district">District <span style="color: red;">*</span></label>
+      <select name="district" id="district">
+        <option value="--Select--" selected disabled>--Select--</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Warangal">Warangal</option>
+        <option value="Bhadrachalam">Bhadrachalam</option>
+      </select><br><br>
+      <label for="mandal">Mandal <span style="color: red;">*</span></label>
+      <select name="mandal" id="mandal">
+        <option value="--Select--" selected disabled>--Select--</option>
+        <option value="Adilabad">Adilabad</option>
+        <option value="Chandrugonda">Chandrugonda</option>
+        <option value="Nadikuda">Nadikuda</option>
+      </select>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <label for="village">Village <span style="color: red;">*</span></label>
+      <select name="village" id="village">
+        <option value="--Select--" selected disabled>--Select--</option>
+        <option value="Adilabad">Adilabad</option>
+        <option value="Chandrugonda">Chandrugonda</option>
+        <option value="Nadikuda">Nadikuda</option>
+      </select><br> <br>
+      <label for="pincode">Pincode <span style="color: red;">*</span></label>
+      <input type="text" name="pincode" id="pincode" placeholder="Pincode"><br>      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+    </fieldset><br>
+
+    <fieldset style="inline-size: 50%;">
+      <legend>Pass Type Details</legend>
+      <label for="city">City <span style="color: red;">*</span></label>
+      <select name="city" id="city">
+        <option value="Hyderabad" selected>Hyderabad</option>
+        <option value="Adilabad">Adilabad</option>
+        <option value="Chandrugonda">Chandrugonda</option>
+        <option value="Nadikuda">Nadikuda</option>
+      </select><br><br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+      <label for="passtype">Pass Type<span style="color: red;">*</span></label>
+      <select name="passtype" id="passtype">
+        <option value="--Select--" selected disabled>--Select--</option>
+        <option value="Adilabad">Adilabad</option>
+        <option value="Chandrugonda">Chandrugonda</option>
+        <option value="Nadikuda">Nadikuda</option>
+      </select>
+      <br> <br>
+    </fieldset>
+    <fieldset style="inline-size: 50%;">
+      <legend>Mode of Payment and Pass Collection</legend>
+      <label for="payment">Mode of Payment <span style="color: red;">*</span></label>
+      <select name="payment" id="payment">
+        <option value="--Select--" selected disabled>--Select--</option>
+        <option value="Payment at Counter<">Payment at Counter</option>
+        <option value="Payment through Online">Payment through Online</option>
+        <option value="Pay Later">Pay Later</option>
+      </select><br><br>
+      <label for="delivery">Select Pass Delivery Mode <span style="color: red;">*</span></label>
+      <select name="delivery" id="delivery">
+        <option value="--Select--" selected disabled>--Select--</option>
+        <option value="At Counter">At Counter</option>
+        <option value="Through Delivery">Through Delivery</option>
+      </select><br><br>
+      <label for="center">Center at which you want to collect Pass <span style="color: red;">*</span></label>
+      <select name="center" id="center">
+        <option value="--Select--" selected disabled>--Select--</option>
+        <option value="KPHB">KPHB</option>
+        <option value="Kukkatpally">Kukkatpally</option>
+        <option value="Gachibowli">Gachibowli</option>
+        <option value="Ameerpet">Ameerpet</option>
+        <option value="Moosapet">Moosapet</option>
+      </select> <br><br>
+    </fieldset>
+    <br><br>
+    <img src="./captcha.jpg" alt="" width="150"> &nbsp; &nbsp; 
+    <img src="./5418779-200.png" alt="" width="50"><br><br>
+    <input type="text" name="" id="">
+    <br><br>
+    <input type="submit" name="" id="" value="Submit">
+    </form>
+  </center>
+</body>
+</html>
