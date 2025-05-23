@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="keywords" content="HTML,CSS,JavaScript">
+
+  <meta property="og:title" content="Sign Up">
+  <meta property="og:description" content="Sign Up Page.">
+  <meta property="og:image" content="https://media.licdn.com/dms/image/v2/D4D12AQFQ-B2IobV-4Q/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1678216405315?e=2147483647&v=beta&t=smqITnKNXypQmReKCpJzCLmr9RsF7dqNelXRGDn9atc">
+  <meta property="og:type" content="webpage">
+  <meta property="og:url" content="https://rohithnani1234.github.io/Day-12-HTML-TASK-2/">
+
+  <link rel="icon" href="./signup.jpg">
+  <title>SignUp</title>
+</head>
+<body>
+  <center>
+    <form action="All.html" method="get">
+      <h1>SignUp Form</h1>
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="firstname" placeholder="First Name" required><br><br>
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lastname" placeholder="Last Name" required><br><br>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" placeholder="Email" required pattern="^[a-z0-9!#$%^&*>?]+@(?:gmail|yahoo)\.[a-z]{2,4}$"><br><br>
+      <label for="password">Password:</label>
+      <input type="text" id="password" name="password" placeholder="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character."   required><br><br>
+      <label for="phnumber">Telephone Number:</label>
+      <input type="tel" id="phnumber" name="phnumber" placeholder="Telephone Number" required pattern="^\+91[6-9][0-9]{9}$" title="Please start with +91"><br><br>
+      <label for="dob">Date of Birth:</label>
+      <input type="text" id="dob" name="dob" required part="^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$" placeholder="yyyy-mm-dd"><br><br>
+      <label for="gender">Gender</label>
+       <input type="radio" id="male" name="gender">
+      <label for="male">Male</label>
+     <input type="radio" id="female" name="gender">
+      <label for="female">Female</label> <br><br>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+      
+    </form>
+  </center>
+</body>
+</html>
